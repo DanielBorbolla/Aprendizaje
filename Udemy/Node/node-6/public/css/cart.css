@@ -1,0 +1,32 @@
+.cart_item_container {
+  height: 300px;
+  width: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  margin: 10px 20px;
+  padding: 10px 20px;
+  display: flex;
+}
+.image_container{
+  width: 300px;
+  height: 100%;
+}
+.image_container img{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.details_container{
+  margin:10px
+}
+
+.item_title{
+  font-size: 50px;
+}
+.detail_span{
+  font-weight: bold;
+  text-transform: uppercase;
+  color:grey
+}
+.item_detail{
+  font-size: 40px;
+}

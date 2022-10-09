@@ -1,0 +1,30 @@
+<%-include('../includes/head.ejs')%>
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/cart.css">
+<%-include('../includes/nav.ejs')%>
+<% if(cartProducts.length>0) {%>
+<% for (let product of cartProducts) {  %>
+
+<div class="cart_item_container">
+    <div class="image_container">
+        <img src="<%=product.productData.imageURL%>" alt="pupitos">
+    </div>
+    <div class="details_container">
+        <div class="item_title"><span class = "detail_span">Title:</span><%=product.productData.title%></div>
+        <div class="item_detail"><span class = "detail_span">Price:</span><%=product.productData.price%></div>
+        <div class="item_detail"><span class = "detail_span">Quantity:</span><%=product.qty%></div>
+        <div class="item_detail"><span class = "detail_span">Subtotal:</span><%=  Number(product.productData.price) * product.qty%></div>
+        <form action="/cart-delete-item" method="POST">
+            <button class="btn" type="submit"> Delete </button>
+            <input type="hidden" value="<%=product.productData.id%>" name="productId">
+        </form>
+    
+    </div>
+</div>
+    <% }%>
+<%} else{%>
+          <h1>Cart is empty</h1>
+         <%} %>
+</body>
+
+</html>

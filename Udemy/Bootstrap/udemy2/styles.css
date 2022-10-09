@@ -1,0 +1,57 @@
+.title {
+    margin: 1px;
+}
+
+.center-text {
+    text-align: center;
+
+}
+
+.bg-primary {
+    background-color: #383e56;
+}
+
+.bg-secondary {
+    background-color: #f69e7b;
+}
+
+.bg-light {
+    background-color: #eedad1;
+
+}
+
+.text-primary {
+    color: #383e56;
+}
+
+.text-secondary {
+    color: #f69e7b;
+}
+
+.text-light {
+    color: #eedad1;
+
+}
+
+.navegation {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.border {
+
+    padding: 10px;
+}
+
+.buttons {
+    width: 18%;
+}
+
+.pad {
+    padding-top: 5px;
+}
+
+.pod {
+    margin-top: 20px;
+}

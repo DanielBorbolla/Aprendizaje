@@ -1,0 +1,4 @@
+tiida		arena	bajo	70000
+golf		azul	medio	10000
+a		a	a	a
+a		a	a	a

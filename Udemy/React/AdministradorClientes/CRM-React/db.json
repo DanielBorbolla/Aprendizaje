@@ -1,0 +1,42 @@
+{
+  "Clientes": [
+    {
+      "nombre": "Juan de mierda",
+      "empresa": "Codigo Con Juan",
+      "email": "juan@juan.com",
+      "telefono": "102013313",
+      "notas": "todo morocho el cocho",
+      "id": 1
+    },
+    {
+      "id": 4,
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@juan.com",
+      "empresa": "Codigo Con Juan"
+    },
+    {
+      "nombre": "Riley",
+      "empresa": "Casa de Liz",
+      "email": "labarcateyera@hotmail.com",
+      "telefono": "12312312312",
+      "notas": "tengo húmeda la cola",
+      "id": 6
+    },
+    {
+      "nombre": "Bimba",
+      "empresa": "viejita",
+      "email": "bancoculero@santander.com",
+      "telefono": "4421451544",
+      "notas": "está nalgona",
+      "id": 7
+    }
+  ]
+}

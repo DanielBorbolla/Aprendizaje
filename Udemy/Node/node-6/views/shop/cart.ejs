@@ -7,21 +7,28 @@
 
 <div class="cart_item_container">
     <div class="image_container">
-        <img src="<%=product.productData.imageURL%>" alt="pupitos">
+        <img src="<%=product.imageURL%>" alt="pupitos">
     </div>
     <div class="details_container">
-        <div class="item_title"><span class = "detail_span">Title:</span><%=product.productData.title%></div>
-        <div class="item_detail"><span class = "detail_span">Price:</span><%=product.productData.price%></div>
-        <div class="item_detail"><span class = "detail_span">Quantity:</span><%=product.qty%></div>
-        <div class="item_detail"><span class = "detail_span">Subtotal:</span><%=  Number(product.productData.price) * product.qty%></div>
+        <div class="item_title"><span class = "detail_span">Title:</span><%=product.title%></div>
+        <div class="item_detail"><span class = "detail_span">Price:</span><%=product.price%></div>
+        <div class="item_detail"><span class = "detail_span">Quantity:</span><%=product.cartItem.quantity%></div>
+        <div class="item_detail"><span class = "detail_span">Subtotal:</span><%=  Number(product.price) * Number(product.cartItem.quantity)%></div>
         <form action="/cart-delete-item" method="POST">
             <button class="btn" type="submit"> Delete </button>
-            <input type="hidden" value="<%=product.productData.id%>" name="productId">
+            <input type="hidden" value="<%=product.id%>" name="productId">
         </form>
     
     </div>
 </div>
     <% }%>
+    <hr>
+    <div class="centered">
+
+        <form action="/checkout" method="POST">
+            <button class="btn" type="submit"> Checkout </button>
+        </form>
+    </div>
 <%} else{%>
           <h1>Cart is empty</h1>
          <%} %>

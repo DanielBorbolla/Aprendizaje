@@ -7,7 +7,7 @@ from score_board import ScoreBoard
 
 def speed_up():
     global speed
-    speed -= 5
+    speed -= 2
 
 
 def exit():
@@ -21,7 +21,7 @@ screen.bgcolor("black")
 screen.title("My Python game")
 screen.tracer(0)
 
-snake = Snake(3)
+snake = Snake(4)
 food = Food()
 score = ScoreBoard()
 screen.update()

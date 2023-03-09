@@ -19,6 +19,10 @@ form {
   display: inline;
 }
 
+.centered {
+  margin-top: 3px;
+  text-align: center;
+}
 .main-header {
   width: 100%;
   height: 3.5rem;
@@ -164,7 +168,12 @@ form {
 .card__image img {
   width: 100%;
 }
-
+.image_details{
+  height: 20rem;
+}
+.image_details img {
+  height:100%;
+}
 .card__actions {
   padding: 1rem;
   text-align: center;

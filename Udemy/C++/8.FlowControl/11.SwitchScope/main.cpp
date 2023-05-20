@@ -13,12 +13,14 @@ int main()
     {
         // int x{9}; // Never going to run
         int x;
+        int y;
+        int z;
         // std::cout << "choose x value" << std::endl;
         // std::cin >> x;
     case 0:
 
         // int y {5};
-        int y;
+
         x = 7;
         x++;
         // z =6;
@@ -28,7 +30,7 @@ int main()
         break;
 
     case 1:
-        int z;
+
         my_var++;
         y = 5;
         std::cout << "y : " << y << std::endl;

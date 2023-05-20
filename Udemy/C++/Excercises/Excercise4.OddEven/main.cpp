@@ -1,13 +1,17 @@
 #include <iostream>
 
-consteval int get_value()
-{
-    return 3;
-}
-
 int main()
 {
-    constexpr int value = get_value();
-    std::cout << "value : " << value << std::endl;
+    int number{0};
+    std::cout << "Please type a whole number: " << std::endl;
+    std::cin >> number;
+    if (number % 2 == 0)
+    {
+        std::cout << number << " is even " << std::endl;
+    }
+    else
+    {
+        std::cout << number << " is odd " << std::endl;
+    }
     return 0;
 }

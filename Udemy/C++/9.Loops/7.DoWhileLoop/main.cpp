@@ -1,13 +1,18 @@
 #include <iostream>
 
-consteval int get_value()
-{
-    return 3;
-}
-
 int main()
 {
-    constexpr int value = get_value();
-    std::cout << "value : " << value << std::endl;
+
+    const int COUNT{0};
+    size_t i{0}; // Iterator declaration
+
+    do
+    {
+        std::cout << i << " : I love C++" << std::endl;
+        ++i; // Incrementation
+    } while (i < COUNT);
+
+    std::cout << "Loop done!" << std::endl;
+
     return 0;
 }
